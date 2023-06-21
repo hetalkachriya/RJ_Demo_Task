@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.table-box {
+  @apply bg-[#fff7] backdrop-blur rounded-[20px] p-[30px]
+}
+
+.table-box .tableres {
+  @apply border border-[#ddd] rounded overflow-x-auto w-full
+}
+
+.table-box .tableres table {
+  @apply border-none w-full rounded bg-[#fff] border-collapse
+}
+
+.table-box .tableres table th {
+  @apply bg-[#f0f0f0] whitespace-nowrap
+}
+
+.table-box .tableres table th,
+.table-box .tableres table td {
+  @apply p-[10px_15px]
+}
+
+.table-box .tableres table th,
+.table-box .tableres table td {
+  @apply border border-[#ddd]
+}
+
+/* .table-box .table table tfoot td {@apply border-b-0 }  */
+.table-box .tableres table tfoot td input {
+  @apply mr-2
+}
+
+/* .table-box .table table tr th:last-child, .table-box .table table tr td:last-child {@apply border-r-0 }  */
+.table-box th {
+  @apply border-b border-[#ddd]
+}
+
+/* .table-box .table table td {@apply border-0 p-0}  */
+.table-box .tableres table td input:focus-visible {
+  @apply outline-none
+}
